@@ -42,6 +42,19 @@
     var checked = Array.prototype.filter.call(boxes, function (b) { return b.checked; }).length;
     document.getElementById('gate-count').textContent = checked;
     document.getElementById('gate-bar').style.width = (checked / boxes.length) * 100 + '%';
+
+    var open = checked === boxes.length;
+    var g2 = store.get('c2:gate', 0);
+    var card = document.getElementById('gate2-card');
+    document.getElementById('gate-step').textContent = 'Gerbang ' + (open ? 2 : 1) + ' dari 5';
+    document.getElementById('ch2-state').innerHTML = open
+      ? '<span style="font-family: \'IBM Plex Mono\', monospace; font-size: 12px; color: #F0C27A">TERBUKA</span>'
+      : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Terkunci"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>';
+    document.getElementById('gate2-label').textContent = open ? 'GATE 2 · ' + (g2 ? g2 + '/6 TERCENTANG' : 'TERBUKA') : 'GATE 2 · TERKUNCI';
+    card.style.border = open ? '1.5px solid #1F4D36' : '1px dashed #B9C3BB';
+    card.style.background = open ? '#FFFFFF' : '#F5F6F1';
+    document.getElementById('gate2-meter').hidden = !open;
+    document.getElementById('gate2-bar').style.width = (g2 / 6) * 100 + '%';
   }
   boxes.forEach(function (b) { b.addEventListener('change', updateGate); });
   document.addEventListener('DOMContentLoaded', updateGate);

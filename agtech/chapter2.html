@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 2 · Validation &amp; Problem-Solution Fit — Toolkit Digital AgTech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="chapter2">
+<div id="top" style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #10261E; background: #F5F6F1; font-size: 16px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #D5DBD3; background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<nav aria-label="Breadcrumb" style="display: flex; gap: 8px; align-items: center; font-size: 14px; flex-wrap: wrap">
+<a href="index.html" style="text-decoration: none; font-weight: 600">Toolkit</a><span style="color: #7A877F">/</span>
+<a href="dashboard.html" style="text-decoration: none">Ruang Kerja</a><span style="color: #7A877F">/</span>
+<span style="color: #4A5A52">Chapter 2 · Validation &amp; PSF</span>
+</nav>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<a href="chapter1-c.html" style="text-decoration: none; font-size: 14px; font-weight: 600; border: 1.5px solid #1F4D36; border-radius: 999px; padding: 10px 16px">← Chapter 1</a>
+<a href="#gate" style="text-decoration: none; font-size: 14px; font-weight: 600; background: #1F4D36; color: #FFFFFF; border-radius: 999px; padding: 10px 16px">Milestone Gate 2</a>
+</div>
+</div>
+</header>
+
+<div class="k-lock" id="lock" hidden><div><span id="lock-text"></span><a href="dashboard.html#gate" style="font-weight: 600">Buka Milestone Gate 1 →</a></div></div>
+
+<section style="background: #10261E; color: #F5F6F1">
+<div style="max-width: 1240px; margin: 0 auto; padding: 44px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 32px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #F0C27A">CHAPTER 2 · DELAPAN BAGIAN</span>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 3.8vw, 50px); line-height: 1.04">Validation &amp; Problem-Solution Fit</h1>
+<p style="margin: 0; font-size: 18px; color: #C3D4C8">Masalahnya sudah terbukti nyata. Sekarang: apakah solusi Anda diinginkan — dibuktikan dengan komitmen, bukan pujian?</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px">
+<div style="background: #1F4D36; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #A9C2B2">MILESTONE</span><span style="font-weight: 600">Sign-up / Waitlist / Pre-order</span></div>
+<div style="background: #4A2418; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #F0B9A6">RISIKO UTAMA</span><span style="font-weight: 600">Over-engineering MVP</span></div>
+</div>
+</div>
+</section>
+
+<div style="max-width: 1240px; margin: 0 auto; padding: 36px 24px 96px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+
+<nav id="secnav" aria-label="Bagian Chapter 2" style="flex: 1 1 220px; position: sticky; top: 24px; display: flex; flex-direction: column; gap: 2px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #4A5A52; padding: 0 12px 8px">DELAPAN BAGIAN</span>
+<a href="#a" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">A</span>Unique Value Proposition</a>
+<a href="#b" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">B</span>Jobs To Be Done</a>
+<a href="#c" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">C</span>Value Proposition Canvas</a>
+<a href="#d" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">D</span>Diffusion of Innovation</a>
+<a href="#e" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">E</span>Prototype</a>
+<a href="#f" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">F</span>Minimum Viable Product</a>
+<a href="#g" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">G</span>Uji Komitmen</a>
+<a href="#h" style="text-decoration: none; padding: 9px 12px; border-radius: 10px; display: flex; gap: 10px; color: #3B4A43"><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">H</span>Lean Canvas V1</a>
+<a href="#gate" style="text-decoration: none; margin-top: 8px; padding: 12px; border-radius: 10px; border: 1.5px dashed #1F4D36; font-weight: 600">Milestone Gate 2</a>
+</nav>
+
+<main style="flex: 999 1 620px; min-width: 0; display: flex; flex-direction: column; gap: 44px">
+
+<!-- A · UVP -->
+<section class="k-sec" id="a" aria-labelledby="a-title">
+<div class="k-sec-head"><span class="k-letter">A</span><div><h2 id="a-title">Unique Value Proposition</h2><p>Dalam satu kalimat, mengapa calon pengguna harus peduli — dan memilih Anda?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Menyatakan nilai dengan bahasa pelanggan, bukan bahasa teknologi.</li>
+<li>Menjadi tolok ukur untuk landing page, pitch, dan materi penyuluhan.</li>
+<li>Memaksa tim memilih satu segmen dan satu manfaat utama.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>UVP adalah kotak di tengah Lean Canvas (Ash Maurya, <em>Running Lean</em>). Isinya bukan daftar fitur, melainkan <strong>hasil akhir yang diinginkan pelanggan</strong>, dalam <strong>ukuran atau waktu yang spesifik</strong>, sambil <strong>menjawab keberatan</strong> terbesar mereka.</p>
+<p>Pelengkapnya adalah <em>high-concept pitch</em>: analogi singkat “X untuk Y” yang langsung dipahami orang awam.</p>
+</div>
+<div class="k-warn"><span class="k-label" style="color: #7A4508">PERHATIAN</span><span>Petani membeli hasil, bukan teknologi. Jika UVP memuat kata seperti IoT, AI, sensor, atau platform, kemungkinan besar Anda masih menjual fitur.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-ref" id="a-ref" hidden></div>
+<div class="k-panel">
+<div class="k-panel-head"><h3>UVP Builder</h3><span>Isi kolom, lalu tulis headline Anda sendiri</span></div>
+<div class="k-panel-body">
+<div class="k-form">
+<label class="k-f">Segmen pelanggan<input class="field" data-bind="uvp.seg" placeholder="Mis. petambak udang skala kecil"></label>
+<label class="k-f">Nama produk<input class="field" data-bind="uvp.product" placeholder="[Nama produk]"></label>
+<label class="k-f wide">Masalah / akar penyebab<input class="field" data-bind="uvp.problem" placeholder="Dari Chapter 1, Bagian C"></label>
+<label class="k-f">Hasil akhir yang diinginkan<input class="field" data-bind="uvp.result" placeholder="Mis. panen tidak gagal karena oksigen anjlok"></label>
+<label class="k-f">Dalam ukuran / waktu<input class="field" data-bind="uvp.time" placeholder="Mis. dalam satu siklus tebar"></label>
+<label class="k-f">Keberatan yang diatasi<input class="field" data-bind="uvp.objection" placeholder="Mis. tanpa harus paham teknologi"></label>
+<label class="k-f">Alternatif saat ini<input class="field" data-bind="uvp.alt" placeholder="Mis. ukur manual sekali sehari"></label>
+<label class="k-f wide">Pembeda utama<input class="field" data-bind="uvp.diff" placeholder="Mis. peringatan dikirim lewat WhatsApp tepat di jam kritis"></label>
+</div>
+<div class="k-out"><span class="k-label">PERNYATAAN POSITIONING (OTOMATIS)</span><p id="uvp-statement"></p></div>
+<div class="k-form">
+<label class="k-f wide">Headline UVP <small>Kalimat Anda sendiri — idealnya ≤ 12 kata, tanpa jargon.</small><input class="field" data-bind="uvp.headline" placeholder="Mis. Panen aman tanpa begadang menjaga kolam."><small id="uvp-hint"></small></label>
+<label class="k-f wide">High-concept pitch<input class="field" data-bind="uvp.pitch" placeholder="Mis. “Alarm asap untuk kolam udang”"></label>
+</div>
+</div>
+</div>
+</section>
+
+<!-- B · JTBD -->
+<section class="k-sec" id="b" aria-labelledby="b-title">
+<div class="k-sec-head"><span class="k-letter">B</span><div><h2 id="b-title">Jobs To Be Done</h2><p>Pekerjaan apa yang sebenarnya “disewa” pelanggan dari produk Anda?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Memahami motivasi di balik keputusan, bukan sekadar demografi.</li>
+<li>Menemukan pesaing sesungguhnya — termasuk cara lama dan “tidak melakukan apa-apa”.</li>
+<li>Menyediakan bahasa untuk kotak Customer Jobs di Bagian C.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Kerangka Jobs To Be Done dipopulerkan Clayton Christensen (<em>Competing Against Luck</em>, 2016): orang tidak membeli produk, mereka “menyewa” produk untuk menyelesaikan suatu pekerjaan dalam situasi tertentu. Setiap job punya dimensi <strong>fungsional</strong>, <strong>emosional</strong>, dan <strong>sosial</strong>.</p>
+<p>Tulis sebagai <em>job story</em>: <strong>Ketika</strong> [situasi], <strong>saya ingin</strong> [motivasi], <strong>sehingga</strong> [hasil yang diharapkan].</p>
+</div>
+<div class="k-warn"><span class="k-label" style="color: #7A4508">PERHATIAN</span><span>Job bukan fitur. “Saya ingin aplikasi yang…” adalah solusi. Job tetap ada walaupun produk Anda tidak pernah dibuat.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Job Stories</h3><span id="jobs-sum"></span></div>
+<div id="jobs"></div>
+<div class="k-panel-foot"><button type="button" class="k-add" data-add="jobs">+ Tambah job story</button></div>
+</div>
+</section>
+
+<!-- C · VPC -->
+<section class="k-sec" id="c" aria-labelledby="c-title">
+<div class="k-sec-head"><span class="k-letter">C</span><div><h2 id="c-title">Value Proposition Canvas</h2><p>Apakah yang Anda tawarkan benar-benar cocok dengan apa yang dibutuhkan pelanggan?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Menguji kecocokan (<em>fit</em>) antara solusi dan kebutuhan secara eksplisit.</li>
+<li>Menemukan fitur yang tidak mengatasi pain apa pun — kandidat untuk dibuang.</li>
+<li>Menemukan pain prioritas yang belum disentuh solusi.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Value Proposition Canvas dikembangkan Alexander Osterwalder dan rekan (<em>Value Proposition Design</em>, 2014). Sisi kanan, <strong>Customer Profile</strong>: Jobs, Pains, Gains. Sisi kiri, <strong>Value Map</strong>: Products &amp; Services, Pain Relievers, Gain Creators.</p>
+<p><em>Fit</em> tercapai ketika pain reliever dan gain creator Anda menyentuh pain dan gain yang paling penting bagi pelanggan.</p>
+</div>
+<div class="k-note"><span class="k-label">CARA MEMBACA</span><span>Hubungkan setiap pain reliever ke pain yang diatasinya. Meter di bawah canvas menghitung berapa pain — terutama pain ★ prioritas — yang sudah tersentuh.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Canvas</h3><button type="button" class="k-add" id="vpc-import" style="min-height: 0">Impor job dari Bagian B</button></div>
+<div class="k-panel-body">
+<div class="k-vpc">
+<div class="k-vpc-side val"><h4>Value Map</h4><div id="vpc-val" style="display: flex; flex-direction: column; gap: 10px"></div></div>
+<div class="k-vpc-side cust"><h4>Customer Profile</h4><div id="vpc-cust" style="display: flex; flex-direction: column; gap: 10px"></div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px"><strong>Kecocokan pain</strong><span id="fit-text"></span></div>
+<div class="k-meter"><div id="fit-bar" style="width: 0"></div></div>
+<div id="fit-flags" style="display: flex; flex-direction: column; gap: 6px"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- D · DoI -->
+<section class="k-sec" id="d" aria-labelledby="d-title">
+<div class="k-sec-head"><span class="k-letter">D</span><div><h2 id="d-title">Diffusion of Innovation</h2><p>Siapa yang akan mengadopsi lebih dulu — dan apa yang menghambat sisanya?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Menentukan siapa pengguna pertama yang realistis, bukan “semua petani”.</li>
+<li>Mengidentifikasi hambatan adopsi sebelum menjadi alasan churn.</li>
+<li>Menyiapkan strategi agar early adopter menular ke tetangga.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Everett Rogers (<em>Diffusion of Innovations</em>, 1962) membagi pengadopsi menjadi lima kelompok: <strong>Innovators</strong> (2,5%), <strong>Early Adopters</strong> (13,5%), <strong>Early Majority</strong> (34%), <strong>Late Majority</strong> (34%), dan <strong>Laggards</strong> (16%). Kerangka ini lama dipakai dalam penyuluhan pertanian.</p>
+<p>Rogers juga menyebut lima atribut yang memengaruhi kecepatan adopsi: keunggulan relatif, kesesuaian, kerumitan, kemudahan dicoba, dan keterlihatan hasil.</p>
+</div>
+<div class="k-note"><span class="k-label">DI LAPANGAN</span><span>Early adopter sering berupa petani maju, ketua kelompok tani, atau kontak tani — orang yang dipercaya tetangganya. Geoffrey Moore (<em>Crossing the Chasm</em>, 1991) mengingatkan ada jurang antara early adopter dan early majority.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Target Adopsi Pertama</h3><span id="doi-target-text">Pilih satu kelompok</span></div>
+<div class="k-panel-body">
+<div class="k-curve" id="doi-curve" aria-hidden="true"></div>
+<div class="k-opts" id="doi-opts" role="group" aria-label="Kelompok target"></div>
+<div id="doi-flag"></div>
+<div class="k-form">
+<label class="k-f">Ciri early adopter kami<textarea class="field" rows="2" data-bind="doi.who" placeholder="Mis. punya ≥ 3 kolam, pernah rugi besar, aktif di grup WhatsApp"></textarea></label>
+<label class="k-f">Di mana kami menemukan mereka<textarea class="field" rows="2" data-bind="doi.where" placeholder="Mis. lewat koperasi, toko pakan, penyuluh"></textarea></label>
+</div>
+</div>
+</div>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Lima Atribut Adopsi</h3><span id="doi-attr-sum"></span></div>
+<div class="k-panel-body" style="gap: 0" id="doi-attrs"></div>
+<div class="k-panel-foot" id="doi-weak" style="font-size: 14px"></div>
+</div>
+</section>
+
+<!-- E · Prototype -->
+<section class="k-sec" id="e" aria-labelledby="e-title">
+<div class="k-sec-head"><span class="k-letter">E</span><div><h2 id="e-title">Prototype</h2><p>Apa cara termurah untuk melihat reaksi nyata sebelum membangun?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Menguji asumsi paling berisiko dengan biaya dan waktu sekecil mungkin.</li>
+<li>Melihat perilaku nyata, bukan mendengar pendapat tentang ide.</li>
+<li>Membuat tim berani membuang ide sebelum telanjur mahal.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Prototype adalah alat belajar, bukan produk untuk dijual. Tingkat <em>fidelity</em>-nya bertingkat: <strong>rendah</strong> (sketsa kertas, storyboard, simulasi peran), <strong>menengah</strong> (mockup yang bisa diklik, video demo), dan <strong>tinggi</strong> (fungsional terbatas).</p>
+<p>Ibarat maket rumah: cukup untuk melihat apakah tata ruangnya masuk akal, jauh sebelum fondasi dicor.</p>
+</div>
+<div class="k-warn"><span class="k-label" style="color: #7A4508">PRINSIP</span><span>Pilih fidelity serendah mungkin yang masih bisa menjawab pertanyaan Anda. Satu prototype, satu asumsi.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Rencana &amp; Hasil Uji Prototype</h3><span id="proto-sum"></span></div>
+<div id="proto"></div>
+<div class="k-panel-foot"><button type="button" class="k-add" data-add="proto">+ Tambah uji prototype</button></div>
+</div>
+</section>
+
+<!-- F · MVP -->
+<section class="k-sec" id="f" aria-labelledby="f-title">
+<div class="k-sec-head"><span class="k-letter">F</span><div><h2 id="f-title">Minimum Viable Product</h2><p>Versi terkecil apa yang cukup untuk menguji hipotesis terbesar?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Mendapatkan pembelajaran tervalidasi dengan usaha minimum.</li>
+<li>Menahan godaan membangun fitur yang belum terbukti dibutuhkan.</li>
+<li>Menetapkan ukuran keberhasilan sebelum eksperimen dimulai.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Eric Ries (<em>The Lean Startup</em>, 2011) mendefinisikan MVP sebagai versi produk yang memungkinkan satu putaran penuh <strong>Build–Measure–Learn</strong> dengan usaha paling kecil. MVP tidak harus berupa perangkat lunak.</p>
+<p>Bentuk umum: <strong>Concierge</strong> (layanan dikerjakan manual), <strong>Wizard of Oz</strong> (tampak otomatis, dikerjakan manusia), <strong>Landing page</strong>, <strong>Piecemeal</strong> (merangkai alat yang sudah ada), dan <strong>Single-feature</strong>.</p>
+</div>
+<div class="k-warn"><span class="k-label" style="color: #7A4508">RISIKO CHAPTER INI</span><span><strong>Over-engineering MVP.</strong> Jika MVP butuh berbulan-bulan dan perangkat keras khusus sebelum ada satu pun pengguna, itu bukan MVP.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Hipotesis yang Diuji</h3><span>Tetapkan ambang sebelum mulai</span></div>
+<div class="k-panel-body">
+<div class="k-form">
+<label class="k-f">Kami percaya…<input class="field" data-bind="mvp.seg" placeholder="[segmen]"></label>
+<label class="k-f">…akan…<input class="field" data-bind="mvp.action" placeholder="Mis. mendaftar waitlist"></label>
+<label class="k-f">Ukuran keberhasilan<input class="field" data-bind="mvp.metric" placeholder="Mis. konversi pengunjung → pendaftar"></label>
+<label class="k-f">Ambang minimum<input class="field" data-bind="mvp.threshold" placeholder="Mis. 15%"></label>
+<label class="k-f">Dalam waktu<input class="field" data-bind="mvp.time" placeholder="Mis. 3 minggu"></label>
+</div>
+<div class="k-out"><span class="k-label">HIPOTESIS</span><p id="mvp-hyp"></p></div>
+</div>
+</div>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Bentuk MVP</h3><span id="mvp-type-text"></span></div>
+<div class="k-panel-body"><div class="k-opts" id="mvp-types" role="group" aria-label="Bentuk MVP"></div></div>
+</div>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Daftar Fitur — Potong Sampai Minimum</h3><span id="feat-sum"></span></div>
+<div id="feats"></div>
+<div class="k-panel-foot"><button type="button" class="k-add" data-add="feats">+ Tambah fitur</button><span id="feat-flag"></span></div>
+</div>
+</section>
+
+<!-- G · Commitment -->
+<section class="k-sec" id="g" aria-labelledby="g-title">
+<div class="k-sec-head"><span class="k-letter">G</span><div><h2 id="g-title">Uji Komitmen: Sign-up, Waitlist, Pre-order</h2><p>Apakah ada yang benar-benar mendaftar, mengantre, atau membayar di muka?</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Mengubah “menarik” menjadi tindakan yang bisa dihitung.</li>
+<li>Membuktikan milestone Chapter 2 dengan data, bukan presentasi.</li>
+<li>Memilih kanal yang paling efektif menjangkau early adopter.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Komitmen punya tangga: <strong>kunjungan</strong> → <strong>sign-up / waitlist</strong> (memberikan kontak dan waktu) → <strong>pre-order / uang muka</strong> (memberikan uang). Semakin tinggi anak tangganya, semakin kuat buktinya.</p>
+<p>Tetapkan target konversi <em>sebelum</em> eksperimen dimulai, agar tim tidak menggeser tiang gawang setelah hasilnya keluar.</p>
+</div>
+<div class="k-note"><span class="k-label">CONTOH MENTOR · FDS</span><span>Landing page jasa drone dengan tombol “Daftar Waitlist”, disebar lewat grup WhatsApp kelompok tani — 22% pengunjung mendaftar.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Log Eksperimen Komitmen</h3><span>Konversi dihitung otomatis</span></div>
+<div class="k-panel-body" style="padding-bottom: 0"><div class="k-stat" id="exp-stats"></div></div>
+<div id="exps" style="margin-top: 16px"></div>
+<div class="k-panel-foot"><button type="button" class="k-add" data-add="exps">+ Tambah eksperimen</button></div>
+</div>
+</section>
+
+<!-- H · Lean Canvas -->
+<section class="k-sec" id="h" aria-labelledby="h-title">
+<div class="k-sec-head"><span class="k-letter">H</span><div><h2 id="h-title">Lean Canvas V1</h2><p>Rangkum seluruh bukti Chapter 1–2 dalam satu halaman.</p></div></div>
+<span class="k-label">WHY</span>
+<ul class="k-why">
+<li>Melihat model bisnis secara utuh dan menemukan kotak yang masih kosong.</li>
+<li>Membedakan bagian yang sudah terbukti dari yang masih asumsi.</li>
+<li>Menjadi titik awal Chapter 3 — dan dokumen untuk mentor.</li>
+</ul>
+<span class="k-label">WHAT</span>
+<div class="k-what">
+<div>
+<p>Lean Canvas dikembangkan Ash Maurya sebagai adaptasi Business Model Canvas (Osterwalder) untuk startup tahap awal: sembilan kotak, dengan fokus pada problem, solution, key metrics, dan unfair advantage.</p>
+<p>Di Chapter 1 Anda sudah mengisi sisi Problem. Versi 1 ini menambahkan sisi solusi berdasarkan bukti Bagian A–G.</p>
+</div>
+<div class="k-note"><span class="k-label">ATURAN</span><span>Setiap kotak diberi label jujur EVIDENCE atau ASSUMPTION. Kotak berlabel ASSUMPTION menjadi daftar uji Chapter 3.</span></div>
+</div>
+<span class="k-label">HOW</span>
+<div class="k-panel">
+<div class="k-panel-head"><h3>Lean Canvas V1</h3><span><span id="canvas-ev">0</span> evidence · <span id="canvas-filled">0</span>/9 kotak terisi</span></div>
+<div class="k-panel-body">
+<div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center"><button type="button" class="k-add" id="canvas-fill" style="border: 1.5px solid #1F4D36; border-radius: 999px; padding: 0 16px">Isi kotak kosong dari Bagian A–G</button><span style="font-size: 13px; color: #4A5A52">Hanya mengisi kotak yang masih kosong.</span></div>
+<div class="k-canvas" id="canvas"></div>
+</div>
+</div>
+</section>
+
+<!-- Gate -->
+<section class="k-sec" id="gate" aria-labelledby="gate-title">
+<div style="background: #FFFFFF; border: 1.5px solid #1F4D36; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline"><h2 id="gate-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px">Milestone Gate 2 · Sign-up / Waitlist / Pre-order</h2><span style="font-size: 14px; color: #4A5A52"><span id="gate-count">0</span> / 6 tercentang · Chapter 3 terbuka saat semua tercentang</span></div>
+<p style="margin: 0; font-size: 14px; color: #4A5A52">Catatan di bawah setiap butir dibaca otomatis dari isian Anda. Centang hanya jika tim sepakat buktinya cukup.</p>
+<div id="gate-items"></div>
+</div>
+</section>
+
+<section aria-labelledby="diskusi" style="background: #FFFFFF; border: 1px solid #D5DBD3; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<h3 id="diskusi" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px">Pertanyaan untuk diskusi tim</h3>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 500">1. Fitur mana yang paling ingin kami bangun, padahal tidak menyentuh pain prioritas di Value Proposition Canvas?<input data-save="chapter2:1" type="text" style="font: inherit; font-weight: 400; font-size: 15px; border: 0; border-bottom: 1.5px solid #C3CCC4; padding: 8px 2px; min-height: 40px; background: transparent"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 500">2. Apakah early adopter kami benar-benar ada dan bisa dihubungi minggu ini? Siapa namanya?<input data-save="chapter2:2" type="text" style="font: inherit; font-weight: 400; font-size: 15px; border: 0; border-bottom: 1.5px solid #C3CCC4; padding: 8px 2px; min-height: 40px; background: transparent"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 500">3. Jika eksperimen komitmen gagal mencapai target, apa yang akan kami ubah lebih dulu — segmen, pesan, atau solusi?<input data-save="chapter2:3" type="text" style="font: inherit; font-weight: 400; font-size: 15px; border: 0; border-bottom: 1.5px solid #C3CCC4; padding: 8px 2px; min-height: 40px; background: transparent"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 500">4. Kotak Lean Canvas mana yang paling berisiko jika ternyata asumsinya salah?<input data-save="chapter2:4" type="text" style="font: inherit; font-weight: 400; font-size: 15px; border: 0; border-bottom: 1.5px solid #C3CCC4; padding: 8px 2px; min-height: 40px; background: transparent"></label>
+</section>
+
+<blockquote style="margin: 0; padding: 8px 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; color: #1F4D36; max-width: 26em">“Pujian itu gratis. Pendaftaran, antrean, dan uang muka tidak.”</blockquote>
+
+<section aria-labelledby="nowwhat" style="background: #10261E; color: #F5F6F1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h2 id="nowwhat" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; color: #F0C27A">NOW WHAT? <span style="color: #F5F6F1; font-weight: 500">— Tindak lanjut</span></h2>
+<ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: #D7E4DA">
+<li>Hubungi setiap pendaftar waitlist dalam 48 jam — ubah mereka menjadi narasumber atau pengguna pilot.</li>
+<li>Jalankan MVP dengan early adopter yang sudah berkomitmen, catat apa yang mereka lakukan, bukan katakan.</li>
+<li>Pindahkan semua kotak ASSUMPTION di Lean Canvas ke daftar eksperimen Chapter 3.</li>
+</ol>
+<div style="border-top: 1px solid #2E4A3D; padding-top: 16px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center">
+<span style="color: #C3D4C8; max-width: 34em">Komitmen awal membuktikan orang MAU. Berikutnya: apakah mereka TETAP memakai — Product-Market Fit.</span>
+<span aria-disabled="true" style="background: #2E4A3D; color: #C3D4C8; padding: 12px 20px; border-radius: 999px; font-weight: 600">Chapter 3 · Product-Market Fit — segera</span>
+</div>
+</section>
+
+</main>
+</div>
+</div>
+<script src="assets/app.js"></script>
+<script src="assets/chapter2.js"></script>
+</body>
+</html>

@@ -29,7 +29,15 @@
     status.style.color = count ? '#7A4508' : '#4A5A52';
   }
 
-  var boxes = document.querySelectorAll('[data-gate] input[type="checkbox"]');
+  var rc = store.get('rc:progress', null);
+  if (rc && rc.done > 0) {
+    var rcStatus = document.getElementById('rc-status');
+    var rcDone = rc.done === rc.total;
+    rcStatus.textContent = rcDone ? 'Siap gate' : 'Berjalan · ' + rc.done + '/' + rc.total;
+    rcStatus.style.cssText = 'font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: ' + (rcDone ? '#E3EDE4' : '#FBEBD3') + '; color: ' + (rcDone ? '#1F4D36' : '#7A4508');
+  }
+
+  var boxes =document.querySelectorAll('[data-gate] input[type="checkbox"]');
   function updateGate() {
     var checked = Array.prototype.filter.call(boxes, function (b) { return b.checked; }).length;
     document.getElementById('gate-count').textContent = checked;

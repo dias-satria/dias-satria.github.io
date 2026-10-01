@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dias Satria · CV</title>
+<meta name="description" content="Curriculum vitae Dias Satria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#F5F6F1;--surface:#FFFFFF;--text:#10261E;--muted:#4A5A52;--line:#D5DBD3;
+  --accent:#1F4D36;--on-accent:#FFFFFF;--tag-bg:#E3EDE4;--tag-text:#1F4D36;--eyebrow:#8A4F0A;
+  --hero:#10261E;--hero-text:#F5F6F1;--hero-muted:#C3D4C8;--gold:#F0C27A;
+  --todo-bg:#FBEBD3;--todo-text:#7A4508;
+  --shadow:0 1px 2px rgba(16,38,30,.06),0 8px 24px rgba(16,38,30,.08);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1A15;--surface:#15241D;--text:#E8EEE9;--muted:#A9B8AF;--line:#2A3D33;
+    --accent:#8FD1A6;--on-accent:#0E1A15;--tag-bg:#1F3529;--tag-text:#BFE3CB;--eyebrow:#F0C27A;
+    --hero:#081310;--todo-bg:#3A2A12;--todo-text:#F0C27A;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1A15;--surface:#15241D;--text:#E8EEE9;--muted:#A9B8AF;--line:#2A3D33;
+  --accent:#8FD1A6;--on-accent:#0E1A15;--tag-bg:#1F3529;--tag-text:#BFE3CB;--eyebrow:#F0C27A;
+  --hero:#081310;--todo-bg:#3A2A12;--todo-text:#F0C27A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 'IBM Plex Sans',system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+:focus-visible{outline:3px solid #D9902B;outline-offset:3px}
+.todo{background:var(--todo-bg);color:var(--todo-text);border-radius:4px;padding:0 4px}
+
+.topbar{position:sticky;top:0;z-index:10;background:var(--hero);color:var(--hero-text);border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font:800 18px 'Bricolage Grotesque',sans-serif;color:var(--hero-text);text-decoration:none}
+.topbar nav{display:flex;gap:4px;flex-wrap:wrap}
+.topbar nav a{color:var(--hero-muted);text-decoration:none;font-size:15px;font-weight:500;padding:8px 12px;border-radius:999px}
+.topbar nav a:hover{color:var(--hero-text);background:rgba(255,255,255,.08)}
+
+.hero{background:var(--hero);color:var(--hero-text)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center;padding-top:72px;padding-bottom:80px}
+.eyebrow{font:500 13px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:var(--eyebrow);text-transform:uppercase}
+.hero .eyebrow{color:var(--gold)}
+h1{margin:12px 0 8px;font:800 clamp(44px,7vw,80px)/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.role{font-size:clamp(18px,2.2vw,22px);color:var(--hero-muted);margin:0 0 20px}
+.tagline{font-size:18px;max-width:34em;margin:0 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.primary{background:var(--gold);color:#10261E}
+.btn.ghost{border:1.5px solid var(--hero-muted);color:var(--hero-text)}
+.avatar{width:clamp(160px,22vw,240px);aspect-ratio:1;border-radius:32px;background:#1F4D36;color:var(--gold);display:flex;align-items:center;justify-content:center;font:800 clamp(56px,8vw,88px) 'Bricolage Grotesque',sans-serif;overflow:hidden;box-shadow:0 0 0 6px rgba(240,194,122,.15)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+
+section.block{padding:80px 0}
+section.block + section.block{border-top:1px solid var(--line)}
+h2{margin:8px 0 28px;font:800 clamp(30px,4vw,44px)/1.05 'Bricolage Grotesque',sans-serif;letter-spacing:-.015em}
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px;align-items:start}
+.about p{margin:0 0 16px;font-size:17px}
+.facts{margin:0;padding:24px;list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:18px;display:flex;flex-direction:column;gap:14px}
+.facts li{display:flex;flex-direction:column;gap:2px}
+.facts span{font-size:12px;font-weight:600;letter-spacing:.05em;color:var(--muted);text-transform:uppercase}
+
+.focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.focus div{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.focus b{display:block;font:500 13px 'IBM Plex Mono',monospace;color:var(--eyebrow);margin-bottom:8px}
+.focus h3{margin:0 0 6px;font:700 20px/1.2 'Bricolage Grotesque',sans-serif}
+.focus p{margin:0;color:var(--muted);font-size:15px}
+
+.timeline{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.timeline li{display:grid;grid-template-columns:140px minmax(0,1fr);gap:24px;padding:20px 0;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0}
+.timeline time{font:500 14px 'IBM Plex Mono',monospace;color:var(--muted)}
+.timeline h3{margin:0;font:700 19px/1.25 'Bricolage Grotesque',sans-serif}
+.timeline p{margin:4px 0 0;color:var(--muted)}
+
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.filter{font:inherit;font-size:14px;font-weight:500;padding:8px 14px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer}
+.filter[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:20px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.thumb{aspect-ratio:16/10;background:var(--tag-bg);border-bottom:1px solid var(--line);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.card .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{margin:0;font:700 22px/1.15 'Bricolage Grotesque',sans-serif}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.tag{font-size:12px;font-weight:600;background:var(--tag-bg);color:var(--tag-text);padding:3px 10px;border-radius:999px}
+.open{font-weight:600;font-size:14px;color:var(--accent)}
+
+.contact{background:var(--accent);color:var(--on-accent);border-radius:28px;padding:48px clamp(24px,5vw,56px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px}
+.contact h2{margin:0 0 8px;color:inherit}
+.contact p{margin:0;opacity:.85;max-width:30em}
+.links{display:flex;gap:10px;flex-wrap:wrap}
+.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--bg);color:var(--text);font-weight:600;text-decoration:none}
+footer{padding:32px 0 48px;color:var(--muted);font-size:14px}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;gap:32px;padding-top:48px;padding-bottom:56px}
+  .avatar{order:-1}
+  .about{grid-template-columns:1fr;gap:28px}
+  .timeline li{grid-template-columns:1fr;gap:4px}
+  section.block{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Dias Satria</a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#aplikasi">Aplikasi</a>
+      <a href="#kontak">Kontak</a>
+      <a href="../">Galeri</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" data-p="eyebrow"></span>
+        <h1 data-p="name"></h1>
+        <p class="role" data-p="role"></p>
+        <p class="tagline" data-p="tagline"></p>
+        <div class="actions">
+          <a class="btn primary" href="#aplikasi">Lihat aplikasi</a>
+          <a class="btn ghost" href="#kontak">Hubungi</a>
+        </div>
+      </div>
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="block" id="tentang">
+    <div class="wrap">
+      <span class="eyebrow">Tentang</span>
+      <h2>Profil singkat</h2>
+      <div class="about">
+        <div id="bio"></div>
+        <ul class="facts" id="facts"></ul>
+      </div>
+      <div class="focus" id="focus" style="margin-top:40px"></div>
+    </div>
+  </section>
+
+  <section class="block" id="pengalaman">
+    <div class="wrap">
+      <span class="eyebrow">Perjalanan</span>
+      <h2>Pengalaman &amp; pendidikan</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <section class="block" id="aplikasi">
+    <div class="wrap">
+      <span class="eyebrow">Galeri</span>
+      <h2>Aplikasi &amp; prototipe</h2>
+      <div class="toolbar" id="filters" role="group" aria-label="Filter kategori"></div>
+      <div class="grid" id="gallery"></div>
+    </div>
+  </section>
+
+  <section class="block" id="kontak">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Mari berkolaborasi</h2>
+          <p data-p="contactNote"></p>
+        </div>
+        <div class="links" id="links"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Dias Satria</div></footer>
+
+<script>
+// Isi profil di sini. Teks dalam [kurung siku] adalah placeholder dan akan disorot sampai diganti.
+// Kosongkan (hapus) item yang tidak ingin ditampilkan.
+var PROFILE = {
+  name: 'Dias Satria',
+  eyebrow: '[Bidang · Institusi]',
+  role: '[Jabatan / peran saat ini]',
+  tagline: '[Satu kalimat tentang apa yang Anda kerjakan dan untuk siapa.]',
+  photo: '',
+  bio: [
+    '[Paragraf 1 — latar belakang dan fokus utama Anda.]',
+    '[Paragraf 2 — proyek, riset, atau program yang sedang dijalankan.]'
+  ],
+  facts: [
+    ['Lokasi', '[Kota, Indonesia]'],
+    ['Afiliasi', '[Institusi / organisasi]'],
+    ['Fokus', '[Bidang utama]']
+  ],
+  focus: [
+    ['[Bidang keahlian 1]', '[Deskripsi singkat]'],
+    ['[Bidang keahlian 2]', '[Deskripsi singkat]'],
+    ['[Bidang keahlian 3]', '[Deskripsi singkat]']
+  ],
+  timeline: [
+    ['[Tahun – sekarang]', '[Jabatan]', '[Institusi / organisasi]'],
+    ['[Tahun – tahun]', '[Jabatan / program]', '[Institusi / organisasi]'],
+    ['[Tahun]', '[Gelar pendidikan]', '[Universitas]']
+  ],
+  contactNote: '[Ajakan singkat — mis. terbuka untuk kolaborasi riset, mentoring startup, atau pelatihan.]',
+  links: [
+    ['Email', ''],
+    ['LinkedIn', ''],
+    ['Google Scholar', ''],
+    ['GitHub', '']
+  ]
+};
+
+var APPS = [
+  {
+    title: 'Toolkit Digital AgTech Indonesia',
+    desc: 'Toolkit lima chapter untuk startup AgTech: Diagnostic Radar interaktif, Mom Test, Root Cause Analysis, dan Milestone Gate berbasis bukti.',
+    href: '../agtech/',
+    thumb: '../assets/thumbs/agtech.jpg',
+    tags: ['AgTech', 'Startup', 'Toolkit']
+  }
+];
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}
+function txt(s) {
+  return esc(s).replace(/\[([^\]]+)\]/g, '<span class="todo">[$1]</span>');
+}
+function $(id) { return document.getElementById(id); }
+
+document.querySelectorAll('[data-p]').forEach(function (el) {
+  var v = PROFILE[el.dataset.p];
+  if (v) el.innerHTML = txt(v); else el.hidden = true;
+});
+
+var initials = PROFILE.name.split(/\s+/).map(function (w) { return w[0]; }).join('').slice(0, 2).toUpperCase();
+$('avatar').innerHTML = PROFILE.photo ? '<img src="' + esc(PROFILE.photo) + '" alt="">' : initials;
+
+$('bio').innerHTML = PROFILE.bio.map(function (p) { return '<p>' + txt(p) + '</p>'; }).join('');
+$('facts').innerHTML = PROFILE.facts.map(function (f) { return '<li><span>' + esc(f[0]) + '</span>' + txt(f[1]) + '</li>'; }).join('');
+$('focus').innerHTML = PROFILE.focus.map(function (f, i) {
+  return '<div><b>0' + (i + 1) + '</b><h3>' + txt(f[0]) + '</h3><p>' + txt(f[1]) + '</p></div>';
+}).join('');
+$('timeline').innerHTML = PROFILE.timeline.map(function (t) {
+  return '<li><time>' + txt(t[0]) + '</time><div><h3>' + txt(t[1]) + '</h3><p>' + txt(t[2]) + '</p></div></li>';
+}).join('');
+if (!PROFILE.timeline.length) $('pengalaman').hidden = true;
+
+var links = PROFILE.links.filter(function (l) { return l[1]; });
+$('links').innerHTML = links.length
+  ? links.map(function (l) {
+      var href = l[0] === 'Email' && l[1].indexOf('mailto:') !== 0 ? 'mailto:' + l[1] : l[1];
+      return '<a href="' + esc(href) + '"' + (href.indexOf('http') === 0 ? ' target="_blank" rel="noopener"' : '') + '>' + esc(l[0]) + '</a>';
+    }).join('')
+  : '<span class="todo">[Tambahkan tautan Email / LinkedIn / Scholar / GitHub di PROFILE.links]</span>';
+
+var active = 'Semua';
+var cats = ['Semua'].concat(APPS.reduce(function (all, a) {
+  a.tags.forEach(function (t) { if (all.indexOf(t) < 0) all.push(t); });
+  return all;
+}, []));
+
+function renderGallery() {
+  $('filters').innerHTML = cats.length > 2 ? cats.map(function (c) {
+    return '<button type="button" class="filter" data-cat="' + esc(c) + '" aria-pressed="' + (c === active) + '">' + esc(c) + '</button>';
+  }).join('') : '';
+  var list = APPS.filter(function (a) { return active === 'Semua' || a.tags.indexOf(active) >= 0; });
+  $('gallery').innerHTML = list.map(function (a) {
+    return '<a class="card" href="' + esc(a.href) + '">' +
+      '<div class="thumb">' + (a.thumb ? '<img src="' + esc(a.thumb) + '" alt="" loading="lazy">' : '') + '</div>' +
+      '<div class="body"><h3>' + esc(a.title) + '</h3><p>' + esc(a.desc) + '</p>' +
+      '<div class="tags">' + a.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+      '<span class="open">Buka aplikasi →</span></div></a>';
+  }).join('');
+}
+$('filters').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-cat]');
+  if (!b) return;
+  active = b.dataset.cat;
+  renderGallery();
+});
+
+$('year').textContent = new Date().getFullYear();
+renderGallery();
+</script>
+</body>
+</html>

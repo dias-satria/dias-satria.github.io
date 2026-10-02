@@ -3,8 +3,6 @@
 
 const REGISTER_URL = 'https://bit.ly/Agtech2026';
 const EVENT_START = new Date('2026-10-04T10:00:00+07:00');
-const TOOLKIT_URL = '../Toolkit%20Digital%20AgTech%20%E2%80%94%20Web%20Mockup.html';
-
 const arrow = '<svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 const ico = id => `<svg viewBox="0 0 24 24"><use href="#${id}"/></svg>`;
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -78,7 +76,7 @@ const NAV = [
   { label: 'News', href: 'news.html', id: 'news' },
   // A null href renders the item as a non-clickable "Segera hadir" entry.
   { label: 'Program', id: 'program', items: [
-    ['Self-Learning Program', TOOLKIT_URL], ['Diagnose Test', TOOLKIT_URL], ['Business Incubation', null], ['Courses', null],
+    ['Self-Learning Program', null], ['Diagnose Test', null], ['Business Incubation', null], ['Courses', null],
   ] },
   { label: 'Learning', id: 'learning', items: [
     ['Jagoan Tani Banyuwangi', '#'], ['Kita Tani Muda Semarang', '#'],
